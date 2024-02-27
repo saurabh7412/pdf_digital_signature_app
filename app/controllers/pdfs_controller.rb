@@ -66,35 +66,3 @@ end
 
 
 
-
-
-
-
-
-
-# class PdfsController < ApplicationController
-#   def sign
-
-
-    #  # Load your private key
-    #  private_key_path = Rails.root.join('config', 'private_key.pem')
-    #  private_key = OpenSSL::PKey::RSA.new(File.read(private_key_path))
-
-    # # Load the PDF file to sign
-    # pdf_path = Rails.root.join('config', 'sample_pdf.pdf')
-    # pdf_content = File.binread(pdf_path)
-
-#     # Create a signature
-#     signature = Base64.encode64(private_key.sign(OpenSSL::Digest::SHA256.new, pdf_content))
-
-#     # Generate a new PDF with the signature
-#     signed_pdf_path = Rails.root.join('config', 'signed_sample.pdf')
-#     Prawn::Document.generate(signed_pdf_path) do
-#       text 'Hello, world!'
-#       self.signature(signature)
-#     end
-
-#     # Send the signed PDF as a response
-#     send_file signed_pdf_path
-#   end
-# end
